@@ -8,7 +8,15 @@ test_str = ""
 if not test_str:  # This checks for empty string
   print("String is empty")
 
-# Example 3: Multiple checks
-test_str = "Hello"
+# Example 4: Loop through strings and check each
+test_strings = [None, "", "Hello", "World", None, ""]
+for test_str in test_strings:
+    if test_str is None:
+        print("String is null")
+    elif not test_str:
+        print("String is empty") 
+    else:
+        print(f"String value is: {test_str}")
+        test_str = "Hello"
 if test_str is not None and test_str:
   print("String is neither null nor empty")
